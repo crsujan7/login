@@ -4,11 +4,16 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+.menu-bar
+{
+    background: whitesmoke;
+    text-align: left;
+}
 .menu-bar ul
 {
     display: inline-flex;
     list-style: none;
-    color: white;
+    color: wheat;
 
 }
 .menu-bar ul li
@@ -19,18 +24,15 @@
 }
 .menu-bar ul li a
 {
-    text-decoration: none;
-    color: white;
+    text-decoration: cornsilk;
+    color:black;
 }
-.menu-bar ul li: hover
-{
-background: #2bab0d;
-border-radius: 3px;
-}
+
 body{
-  background-image: url(hello.jpg); 
+  background-image: url(stadium.jpg); 
   background-repeat: no-repeat;
-  background-size: 1450px;
+  background-size: 4000px;
+  
 }
 .wrapper{
   width: 330px;
@@ -42,23 +44,23 @@ body{
   box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
 }
 h1{
-  font-size: 2rem;
+  font-size: 3rem;
   color:black;
 }
 p{
   margin-bottom: 1.7rem;
 }
 form input{
-  width: 85%;
-  outline: none;
-  border: none;
-  background: white;
-  padding: 12px 14px;
-  margin-bottom: 10px;
-  border-radius: 10px;
+    width: 85%;
+    outline: none;
+    border: none;
+    background: white;
+    padding: 12px 14px;
+    margin-bottom: 10px;
+    border-radius: 10px;
 }
 .recover{
-  text-align: right;
+  text-align: center;
   font-size: 0.8rem;
   margin: 0.2rem 1.7rem 0 0;
 }
@@ -71,15 +73,17 @@ button{
   margin-top: 1rem;
   padding: 8px 0;
   border-radius: 5px;
-  outline: none;
+  outline: 2rem;
   border: none;
-  width: 85%;
-  background: tomato;
+  width: 40%;
+  position:relative;
+  background: purple;
   color:white;
   cursor: pointer;
 }
-button:hover{
+button:host-context(){
   background: blue(122, 30, 30, 0.767);
+  
 }
 .or{
   font-size: 0.8rem;
@@ -92,7 +96,7 @@ button:hover{
   margin-left: .9rem;
   font-size: 1.5rem;
   cursor: pointer;
-  border: 2px solid #dfe9f5;
+  border: 2px solid white;
 }
 .icons i:hover{
   color: white !important;
@@ -110,9 +114,11 @@ button:hover{
   margin-top: 1.4rem;
 }
 .not-member a{
-  color: tomato;
+  color: purple;
   text-decoration: none;
 }
 a:hover{
-  text-decoration: underline;
+  text-decoration: underline
 }
+    
+
